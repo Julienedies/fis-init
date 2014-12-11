@@ -1,0 +1,10 @@
+{
+    "name": "fis-static",
+    "version": "0.1.0",
+    "description": "基于fis封装的前端开发环境脚手架",
+    "devDependencies": {
+        "fis":"1.8.6",
+        "fis-postpackager-simple":"0.0.18"
+    },
+    "scripts": {}
+}

@@ -1,0 +1,44 @@
+<header id="header" ic-ctrl="headerCtrl">
+
+    <!--[if lt IE 8]>
+    <p class="browsehappy">浏览器版本太低，为了更好的浏览体验，请更换或升级浏览器!</p>
+    <![endif]-->
+
+    <div id="logo-box" class="hr">
+
+        <div class="inline fl lg-56">
+            header
+        </div>
+
+        <div class="inline search">
+            <div class="lgp-2" style="line-height: 1.5;">
+                <i class="btn icon icon-search"></i>
+                <input type="text"
+                       placeholder="公司搜索"
+                       class="input-text"
+                       ic-type-ahead="topSearch"
+                       ic-on-type-complete="topSearch.complete"
+                       ic-source-ajax="/search/company"
+                       ic-submit-method="post"/>
+                <!-- 输入提示列表 -->
+                <div ic-role-list="topSearch" ic-tpl="topSearch">
+                    <ul class="select-list" ic-init="list=model" ic-if="list">
+                        <li ic-for="i,v in list" ic-class="{{i==0?'active':''}}" ic-role-type-item>
+                            <a class="inline wp-100 fc-k1" target="_blank" ic-href="/stock/profile/{{v.code}}">
+                                <span class="inline search-code" ic-bind="v.code"></span>
+                                <span class="inline" ic-bind="v.name"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <nav id="nav-box">
+
+    </nav>
+
+</header>

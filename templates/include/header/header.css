@@ -1,0 +1,29 @@
+#header{
+}
+
+#logo-box{
+}
+#logo-box .search{
+    position: relative;
+    margin:0 30px 0 0px;
+    top:14px;
+}
+#logo-box  .search .icon-search{
+    position: absolute;
+    top: 6px;
+    left: 5px;
+}
+#logo-box .search .hint{
+    position: absolute;
+    top:6px;
+    right: 5px;
+}
+#logo-box .search input{
+    width: 16em;
+    padding:0 30px 0 30px;
+}
+#nav-box{
+    height: 50px;
+    line-height: 48px;
+    background: blue;
+}
